@@ -67,13 +67,13 @@ class R_X86_64_PLT32(RelocTruncate32Mixin, GenericPCRelativeAddendReloc):
     check_sign_extend = True
 
 
-class R_X86_64_GOTPCREL(RelocGOTMixin, RelocTruncate32Mixin, GenericPCRelativeAddendReloc):
+class R_X86_64_GOTPCREL(RelocTruncate32Mixin, GenericPCRelativeAddendReloc):
     check_sign_extend = True
 
 
-class R_X86_64_GOTPCRELX(RelocGOTMixin, RelocTruncate32Mixin, GenericPCRelativeAddendReloc):
+class R_X86_64_GOTPCRELX(RelocTruncate32Mixin, GenericPCRelativeAddendReloc):
     check_sign_extend = True
 
 
-class R_X86_64_REX_GOTPCRELX(RelocGOTMixin, RelocTruncate32Mixin, GenericPCRelativeAddendReloc):
+class R_X86_64_REX_GOTPCRELX(RelocTruncate32Mixin, GenericPCRelativeAddendReloc):
     check_sign_extend = True
